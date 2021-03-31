@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: calc(100vh - 12.8px);
+  background: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: center center no-repeat;
+  background-size: cover;
+}
+
+.bg-pattern-top {
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+.bg-pattern-bottom {
+  position: fixed;
+  transform: translate(50%, 50%);
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  width: 22rem;
+  height: 25rem;
+  border-radius: 1rem;
+  color: hsl(227, 10%, 46%);
+}
+
+.card-top {
+  height: 38%;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: url(./images/bg-pattern-card.svg) center center no-repeat;
+  background-size: cover;
+}
+
+.card-middle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 37%;
+  border-bottom: 1px solid hsla(0, 0%, 59%, 0.3);
+}
+
+.card-middle .profile-image {
+  background: url(./images/image-victor.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -35%;
+  border: 5px #fff solid;
+  border-radius: 50%;
+}
+
+.card-middle .profile-details {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.card-middle .profile-details .profile-name {
+  font-size: 18px;
+  margin: 1rem;
+}
+
+.card-middle .profile-details .name {
+  font-weight: 700;
+  margin-right: 3px;
+  color: hsl(229, 23%, 23%);
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 25%;
+}
+
+.card-bottom .stats {
+  text-align: center;
+  font-size: 10px;
+}
+
+.card-bottom .stats .stat-no {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0.5rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  color: hsl(278, 83%, 32%);
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 78%, 37%);
+}
